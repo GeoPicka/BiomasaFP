@@ -41,4 +41,11 @@ GoodmanPalm<-function(d,h,wd){
 }
 
 
+#' @describeIn AGBChv14 Typical Cerrado equation for Extra.Diameter (basal) and local heights, equation from Rezende et. al. 2006. (see Rezende et al. 2006. Comparação de modelos matemáticos para estimativa do volume, biomassa e estoque de carbono da vegetação lenhosa de um cerrado sensu stricto em Brasília, DF. Scientia Forestalis, n. 71, p. 65-76, agosto 2006  )
+AGBRezende06<-function(d,h,wd){
+  (-0.49129 + 0.02912 * ((d/10) ^2 ) * h) / 1000
+}
+
+
+
 
