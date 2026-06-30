@@ -25,7 +25,6 @@
 
 
 CalcAGB <- function (xdataset, dbh = "D4",height.data=NULL,AGBFun=AGBChv14){
-         extra_d4_funs <- list(AGBRezende06)  # Add new Extra.D4 equations here
          if (missing(dbh) && any(sapply(extra_d4_funs, identical, AGBFun))) dbh <- "Extra.D4"
          cdf <- xdataset
          ## Clean file
